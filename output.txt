@@ -1,0 +1,1650 @@
+html 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  digitalData = {
+  "pageInstanceID" : "https://www.mathworks.com/discovery/deep-learning.html",
+  "page" : {
+    "pageInfo" : {
+      "pageID" : "https://www.mathworks.com/discovery/deep-learning.html",
+      "destinationURL" : "https://www.mathworks.com/discovery/deep-learning.html"
+    },
+    "category" : {
+      "subCategory1" : "discovery/deep-learning",
+      "pageType" : "disc"
+    },
+    "attributes" : {
+      "descriptonCode" : "sts",
+      "recommendationEntityId" : "61809dd9633932c1cf67daad878e008adfd4ae34",
+      "aic" : [ "deep-learning" ]
+    }
+  },
+  "product" : [ {
+    "productInfo" : { }
+  } ],
+  "component" : [ ]
+}; 
+ (function(g,b,d,f){(function(a,c,d){if(a){var e=b.createElement("style");e.id=c;e.innerHTML=d;a.appendChild(e)}})(b.getElementsByTagName("head")[0],"at-body-style",d);setTimeout(function(){var a=b.getElementsByTagName("head")[0];if(a){var c=b.getElementById("at-body-style");c&&a.removeChild(c)}},f)})(window,document,"[class*='personalization-container']:not([id^='web-application']) {opacity: 0 !important}",1E3);   
+ 
+ 
+ 
+ What Is Deep Learning? | How It Works, Techniques & Applications - MATLAB & Simulink 
+ !function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="LERXA-6VNES-W6PXS-U8C7F-BXSZH",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"LERXA-6VNES-W6PXS-U8C7F-BXSZH",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e=""=="true"?1:0,t="",n="zja22gyxbd3jyzdd5ciq-f-ddefee3cf-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,_={"ak.v":"35","ak.cp":"1460359","ak.ai":parseInt("195948",10),"ak.ol":"0","ak.cr":333,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"ce88803","ak.r":16179,"ak.a2":e,"ak.m":"x","ak.n":"essl","ak.bpcip":"202.65.173.0","ak.cport":40150,"ak.gh":"23.57.76.42","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"reno","ak.t":"1684269201","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==xM+0kF672O/fv/hW4F/6MBZ4CGIWvJfjIx2SotRd0bxBmTSsuNRS6vZFtXKzV8szT3d7KvC0ltS8nbYsFjg7C9R/0wotKJS6P93TouNHUDazYZv02ALQb6Y4lrtQj+34oh+5PuD6HBFDfIgiYGkOSgD6weWsI56ibkg/oXxdWtHxWBVZuM62bEC6d7uy2GFxb8gpr0J3lvX6G0mxwDopMx3AC4hvFQRn4J7fmFrppQ8mHTPiiY4EaEpf3B95g07PZ2Lz1FXauiu3X4pI/0PmkyEgvEq+DPDBECJZ8B4GYvtH6t31UXf3/Zn4Mb2lXHjy2b15aFweNUuxGjFBWlOHSJ/GtrJY9QT+kkGM5LUOjwMsA7SSuCe1v/oTCI7WVb3uzeAsKSBepj5Wy9KDYFJU9c0JPA0KXVUvSMDLs5i2SEI=","ak.pv":"163","ak.dpoabenc":"","ak.tf":i};if(""!==t)_["ak.ruds"]=t;var o={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))_["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(_)},rv:function(){var a=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:_,akDNSPreFetchDomain:n,init:function(){if(!o.i){var a=BOOMR.subscribe;a("before_beacon",o.av,null,null),a("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window); 
+ 
+ Skip to content 
+  Mobile TopNav: Start  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Toggle Main Navigation 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Sign In  to Your MathWorks Account 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ My Account 
+ My Community Profile 
+ Link License 
+ Sign Out 
+ 
+ 
+ 
+ 
+ Products 
+ 
+ 
+ Solutions 
+ 
+ 
+ Academia 
+ 
+ 
+ Support 
+ 
+ 
+ Community 
+ 
+ 
+ Events 
+ 
+ 
+ Get MATLAB 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  Mobile TopNav: End  
+  Desktop TopNav: Start  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Products 
+ 
+ 
+ Solutions 
+ 
+ 
+ Academia 
+ 
+ 
+ Support 
+ 
+ 
+ Community 
+ 
+ 
+ Events 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Get MATLAB 
+ 
+ Sign In  to Your MathWorks Account 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ My Account 
+ My Community Profile 
+ Link License 
+ Sign Out 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  Desktop TopNav: End  
+ 
+  Section Header: Start  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+				
+				Deep Learning
+			 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Search MathWorks.com 
+ 
+ 
+ 
+ Search 
+ 
+ 
+ 
+ 
+ 
+			$(".search_scope_trigger").click(function handlerSearch(event) {
+				var target1 = event.target.parentNode.attributes.getNamedItem("data-groupid").nodeValue;
+				$('#' + target1).removeClass("in");
+			});
+		 
+ 
+ Close Mobile Search 
+ 
+ 
+ 
+ 
+ 
+ Close Mobile Search 
+ 
+ 
+  Mobile Local Nav: Start  
+  Mobile Local Nav: End  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+				@media screen and (min-width: 768px) { .https___www_mathworks_com_discovery_deep_learning__jcr_content_mainParsys_band_189784273_copy_backgroundImage { background-image: url(https://www.mathworks.com/discovery/deep-learning/_jcr_content/mainParsys/band_189784273_copy/backgroundImage.adapt.full.medium.jpg/1671089857222.jpg) !important; }}
+			 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ What Is Deep Learning? 
+ 3 things you need to know 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Deep learning is a machine learning technique that teaches computers to do what comes naturally to humans: learn by example. Deep learning is a key technology behind driverless cars, enabling them to recognize a stop sign, or to distinguish a pedestrian from a lamppost. It is the key to voice control in consumer devices like phones, tablets, TVs, and hands-free speakers. Deep learning is getting lots of attention lately and for good reason. It’s achieving results that were not possible before. 
+ In deep learning, a computer model learns to perform classification tasks directly from images, text, or sound. Deep learning models can achieve state-of-the-art accuracy, sometimes exceeding human-level performance. Models are trained by using a large set of labeled data and neural network architectures that contain many layers. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Why It Matters 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ How It Works 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Deep Learning with MATLAB 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Why Deep Learning Matters 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ How does deep learning attain such impressive results? 
+ In a word, accuracy. Deep learning achieves recognition accuracy at higher levels than ever before. This helps consumer electronics meet user expectations, and it is crucial for safety-critical applications like driverless cars. Recent advances in deep learning have improved to the point where deep learning outperforms humans in some tasks like classifying objects in images. 
+ While deep learning was first theorized in the 1980s, there are two main reasons it has only recently become useful: 
+ 
+ Deep learning requires large amounts of  labeled data . For example, driverless car development requires millions of images and thousands of hours of video. 
+ Deep learning requires substantial  computing power . High-performance GPUs have a parallel architecture that is efficient for deep learning. When combined with clusters or cloud computing, this enables development teams to reduce training time for a deep learning network from weeks to hours or less. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Examples of Deep Learning at Work 
+ Deep learning applications are used in industries from automated driving to medical devices. 
+ Automated Driving: Automotive researchers are using deep learning to automatically detect objects such as stop signs and traffic lights. In addition, deep learning is used to detect pedestrians, which helps decrease accidents. 
+ Aerospace and Defense: Deep learning is used to identify objects from satellites that locate areas of interest, and identify safe or unsafe zones for troops. 
+ Medical Research: Cancer researchers are using deep learning to automatically detect cancer cells. Teams at UCLA built an advanced microscope that yields a high-dimensional data set used to train a deep learning application to accurately identify cancer cells. 
+ Industrial Automation: Deep learning is helping to improve worker safety around heavy machinery by automatically detecting when people or objects are within an unsafe distance of machines. 
+ Electronics: Deep learning is being used in automated hearing and speech translation. For example, home assistance devices that respond to your voice and know your preferences are powered by deep learning applications. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ How Deep Learning Works 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Most deep learning methods use  neural network  architectures, which is why deep learning models are often referred to as  deep neural networks . 
+ The term “deep” usually refers to the number of hidden layers in the neural network.  Traditional neural networks  (4:37)  only contain 2-3 hidden layers, while deep networks can have as many as 150. 
+ Deep learning models are trained by using large sets of labeled data and neural network architectures that learn features directly from the data without the need for manual feature extraction. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Deep Learning and Traditional Machine Learning: Choosing the Right Approach. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  3:40 
+ Video length is 3:40. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+			Deep Learning and Traditional Machine Learning: Choosing the Right Approach 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Figure 1: Neural networks, which are organized in layers consisting of a set of interconnected nodes. Networks can have tens or hundreds of hidden layers. 
+ 
+ 
+ 
+ 
+ One of the most popular types of deep neural networks is known as  convolutional neural networks  (CNN  or  ConvNet) . A CNN convolves learned features with input data, and uses 2D convolutional layers, making this architecture well suited to processing 2D data, such as images. 
+ CNNs eliminate the need for manual  feature extraction , so you do not need to identify features used to classify images. The CNN works by extracting features directly from images. The relevant features are not pretrained; they are learned while the network trains on a collection of images. This automated feature extraction makes deep learning models highly accurate for  computer vision  tasks such as object classification. 
+ 
+ 
+ 
+ 
+ 
+ 
+ Figure 2: Example of a network with many convolutional layers. Filters are applied to each training image at different resolutions, and the output of each convolved image serves as the input to the next layer. 
+ 
+ 
+ 
+ 
+ CNNs learn to detect different features of an image using tens or hundreds of hidden layers. Every hidden layer increases the complexity of the learned image features. For example, the first hidden layer could learn how to detect edges, and the last learns how to detect more complex shapes specifically catered to the shape of the object we are trying to recognize. 
+ What's the Difference Between Machine Learning and Deep Learning? 
+ Deep learning is a specialized form of machine learning. A machine learning workflow starts with relevant features being manually extracted from images. The features are then used to create a model that categorizes the objects in the image. With a deep learning workflow, relevant features are automatically extracted from images. In addition, deep learning performs “end-to-end learning” – where a network is given raw data and a task to perform, such as classification, and it learns how to do this automatically. 
+ Another key difference is deep learning algorithms scale with data, whereas shallow learning converges. Shallow learning refers to machine learning methods that plateau at a certain level of performance when you add more examples and training data to the network. 
+ A key advantage of deep learning networks is that they often continue to improve as the size of your data increases. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Figure 3. Comparing a machine learning approach to categorizing vehicles (left) with deep learning (right). 
+ 
+ 
+ 
+ 
+ In machine learning, you manually choose features and a classifier to sort images. With deep learning, feature extraction and modeling steps are automatic. 
+ 
+ 
+ 
+ 
+ 
+			Object Recognition: Deep Learning and Machine Learning for Computer Vision  (26:57) 
+ 
+ 
+ 
+ 
+			What Are Convolutional Neural Networks? | Introduction to Deep Learning  (4:44) 
+ 
+ 
+ 
+ Choosing Between Machine Learning and Deep Learning 
+ Machine learning offers a variety of techniques and models you can choose based on your application, the size of data you're processing, and the type of problem you want to solve. A successful deep learning application requires a very large amount of data (thousands of images) to train the model, as well as  GPUs, or graphics processing units , to rapidly process your data. 
+ When choosing between machine learning and deep learning, consider whether you have a high-performance GPU and lots of labeled data. If you don’t have either of those things, it may make more sense to use machine learning instead of deep learning. Deep learning is generally more complex, so you’ll need at least a few thousand images to get reliable results. Having a high-performance GPU means the model will take less time to analyze all those images. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+			Panel Navigation
+		 
+ 
+ 
+				@media screen and (min-width: 992px) { .https___www_mathworks_com_campaigns_offers_deep_learning_vs_machine_learning_algorithm__jcr_content_thumbnail { background-image: url(https://www.mathworks.com/campaigns/offers/deep-learning-vs-machine-learning-algorithm/_jcr_content/thumbnail.adapt.full.medium.jpg/1600365036627.jpg) !important; }}
+				@media screen and (min-width: 768px) and (max-width: 991px){ .https___www_mathworks_com_campaigns_offers_deep_learning_vs_machine_learning_algorithm__jcr_content_thumbnail { background-image: url(https://www.mathworks.com/campaigns/offers/deep-learning-vs-machine-learning-algorithm/_jcr_content/thumbnail.adapt.full.low.jpg/1600365036627.jpg) !important; }}
+			 
+ 
+ 
+ 
+ 
+ 
+ 
+
+		
+
+		
+			
+			Deep Learning and Traditional Machine Learning: Choosing the Right Approach 
+ 
+ 
+
+		
+
+		
+			
+			Read ebook 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ How to Create and Train Deep Learning Models 
+ The three most common ways people use deep learning to perform object classification are: 
+ Training from Scratch 
+ To train a deep network from scratch, you gather a very large labeled data set and design a network architecture that will learn the features and model. This is good for new applications, or applications that will have a large number of output categories. This is a less common approach because with the large amount of data and rate of learning, these networks typically take days or weeks to train. 
+ 
+ 
+ 
+ 
+ 
+			Deep Learning in 11 Lines of MATLAB Code | Deep Learning with MATLAB  (2:38) 
+ 
+ 
+ Transfer Learning 
+ Most deep learning applications use the  transfer learning  approach, a process that involves fine-tuning a pretrained model. You start with an existing network, such as AlexNet or GoogLeNet, and feed in new data containing previously unknown classes. After making some tweaks to the network, you can now perform a new task, such as categorizing only dogs or cats instead of 1000 different objects. This also has the advantage of needing much less data (processing thousands of images, rather than millions), so computation time drops to minutes or hours. 
+ Transfer learning requires an interface to the internals of the pre-existing network, so it can be surgically modified and enhanced for the new task.  MATLAB ®  has tools and functions designed to help you do transfer learning. 
+ 
+ 
+ 
+ 
+ 
+			Transfer Learning in 10 Lines of MATLAB Code | Deep Learning with MATLAB  (3:59) 
+ 
+ 
+ Feature Extraction 
+ A slightly less common, more specialized approach to deep learning is to use the network as a  feature extractor . Since all the layers are tasked with learning certain features from images, we can pull these features out of the network at any time during the training process. These features can then be used as input to a  machine learning model  such as  support vector machines (SVM) . 
+ Accelerating Deep Learning Models with GPUs 
+ Training a deep learning model can take a long time, from days to weeks. Using GPU acceleration can speed up the process significantly. Using MATLAB with a GPU reduces the time required to train a network and can cut the training time for an image classification problem from days down to hours. In training deep learning models, MATLAB uses GPUs (when available) without requiring you to understand how to program GPUs explicitly. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Figure 4. Deep Learning Toolbox commands for training your own CNN from scratch or using a pretrained model for transfer learning. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Deep Learning Applications 
+ Pretrained deep neural network models can be used to quickly apply deep learning to your problems by performing transfer learning or feature extraction. For MATLAB users, some available models include AlexNet, VGG-16, and VGG-19, as well as Caffe models (for example, from Caffe Model Zoo) imported using importCaffeNetwork. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Use AlexNet to Recognize Objects with Your Webcam 
+ Use MATLAB, a simple webcam, and a deep neural network to identify objects in your surroundings. 
+ 
+ 
+ 
+ 
+
+		
+
+		
+			
+			Learn more 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Example: Object Detection Using Deep Learning 
+ In addition to  object recognition , which identifies a specific object in an image or video, deep learning can also be used for  object detection .  Object detection  algorithms like YOLO can recognize and locate the object in a scene, and can locate multiple objects within the image. 
+ 
+ 
+ 
+ 
+
+		
+
+		
+			
+			See example 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Deep Learning with MATLAB 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ MATLAB makes deep learning easy. With tools and functions for managing large data sets, MATLAB also offers specialized toolboxes for working with machine learning, neural networks, computer vision, and automated driving. 
+ With just a few lines of code, MATLAB lets you do deep learning without being an expert. Get started quickly, create and visualize models, and deploy models to servers and embedded devices. 
+ Teams are successful using MATLAB for deep learning because it lets you: 
+ 
+ Create and Visualize Models with Just a Few Lines of Code. 
+ MATLAB lets you build deep learning models with minimal code. With MATLAB, you can quickly import pretrained models and visualize and debug intermediate results as you adjust training parameters. 
+ Perform Deep Learning Without Being an Expert. 
+ You can use MATLAB to learn and gain expertise in the area of deep learning. Most of us have never taken a course in deep learning. We have to learn on the job. MATLAB makes learning about this field practical and accessible. In addition, MATLAB enables domain experts to do deep learning – instead of handing the task over to data scientists who may not know your industry or application. 
+ Automate Ground Truth Labeling of Images and Video. 
+ MATLAB enables users to interactively label objects within images and can automate  ground truth labeling  within videos for training and testing deep learning models. This interactive and automated approach can lead to better results in less time. 
+ Integrate Deep Learning in a Single Workflow. 
+ MATLAB can unify multiple domains in a single workflow. With MATLAB, you can do your thinking and programming in one environment. It offers tools and functions for deep learning, and also for a range of domains that feed into deep learning algorithms, such as signal processing, computer vision, and data analytics. 
+ 
+ With MATLAB, you can integrate results into your existing applications. MATLAB automates deploying your deep learning models on enterprise systems, clusters, clouds, and embedded devices. 
+ See more  deep learning features and get example code . 
+ Related products:  MATLAB ,  Computer Vision Toolbox™ ,  Statistics and Machine Learning Toolbox™ ,  Deep Learning Toolbox™ , and  Automated Driving Toolbox™ . 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Top 5 Reasons to Use MATLAB for Deep Learning. 
+ 
+ 
+ 
+ 
+ 
+ 
+  2:16 
+ Video length is 2:16. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+			Top 5 Reasons to Use MATLAB for Deep Learning 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+		
+
+		
+			
+			See more deep learning features and get example code 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Learn More About Deep Learning 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ What Is Deep Learning? | Introduction to Deep Learning. 
+ 
+ 
+ 
+ 
+ 
+ 
+  3:33 
+ Video length is 3:33. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+			What Is Deep Learning? | Introduction to Deep Learning 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Deep Learning in 11 Lines of MATLAB Code | Deep Learning with MATLAB. 
+ 
+ 
+ 
+ 
+ 
+ 
+  2:38 
+ Video length is 2:38. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+			Deep Learning in 11 Lines of MATLAB Code | Deep Learning with MATLAB 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Deep Learning for Engineers. 
+ 
+ 
+ 
+ 
+ 
+ 
+  5 videos 
+ 
+ 
+ 
+ 
+ 
+ 
+
+		
+
+		
+			
+			Deep Learning for Engineers  (5 videos) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Get Started with Deep Learning Using MATLAB. 
+ 
+ 
+ 
+ 
+ 
+ 
+  18:23 
+ Video length is 18:23. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+			Get Started with Deep Learning Using MATLAB 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Deep Learning in Simulink. 
+ 
+ 
+ 
+ 
+ 
+ 
+  3:45 
+ Video length is 3:45. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+			Deep Learning in Simulink 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+		
+
+		
+			
+			Practical Deep Learning Examples with MATLAB 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Related Topics 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Machine Learning 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Neural Networks 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Predictive Analytics 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Artificial Intelligence 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Reinforcement Learning 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Convolutional Neural Network 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ × 
+ 
+ 
+ 
+ 
+ 
+ Select a Web Site 
+ Choose a web site to get translated content where available and see local events and offers. Based on your location, we recommend that you select:  .
+						 
+ 
+ 
+ 
+ 
+ 
+  (English) 
+  (Deutsch) 
+  (Français) 
+ 
+ 
+ 
+ 
+  (简体中文) 
+  (English) 
+ 
+ 
+ 
+ 
+ You can also select a web site from the following list 
+ 
+ How to Get Best Site Performance 
+ Select the China site (in Chinese or English) for best site performance. Other MathWorks country sites are not optimized for visits from your location. 
+ 
+ 
+ 
+ Americas 
+ 
+ América Latina  (Español)
+							 
+ Canada  (English)
+							 
+ United States  (English)
+							 
+ 
+ 
+ 
+ Europe 
+ 
+ 
+ 
+ Belgium  (English)
+									 
+ Denmark  (English)
+									 
+ Deutschland  (Deutsch)
+									 
+ España  (Español)
+									 
+ Finland  (English)
+									 
+ France  (Français)
+									 
+ Ireland  (English)
+									 
+ Italia  (Italiano)
+									 
+ Luxembourg  (English)
+									 
+ 
+ 
+ 
+ 
+ Netherlands  (English)
+									 
+ Norway  (English)
+									 
+ Österreich  (Deutsch)
+									 
+ Portugal  (English)
+									 
+ Sweden  (English)
+									 
+ Switzerland
+										 
+ Deutsch 
+ 
+ English 
+ 
+ Français 
+ 
+ 
+ 
+ United Kingdom 
+										(English)
+									 
+ 
+ 
+ 
+ 
+ 
+ Asia Pacific 
+ 
+ Australia  (English)
+							 
+ India  (English)
+							 
+ New Zealand  (English)
+							 
+ 中国
+								 
+ 简体中文 Chinese 
+ 
+ 
+ English 
+ 
+ 
+ 
+ 日本 Japanese  (日本語)
+							 
+ 한국 Korean  (한국어)
+							 
+ 
+ 
+ 
+ Contact your local office 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+		
+
+		
+			
+			Trial software 
+ 
+ 
+ 
+
+		
+
+		
+			
+			Contact sales 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ MathWorks 
+ Accelerating the pace of engineering and science 
+ 
+ 
+ 
+ MathWorks is the leading developer of mathematical computing software for engineers and scientists. 
+ 
+ 
+ 
+ Discover… 
+ 
+ 
+ 
+ 
+ 
+ 
+ Explore Products 
+ 
+ 
+ MATLAB 
+ Simulink 
+ Student Software 
+ Hardware Support 
+ File Exchange 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Try or Buy 
+ 
+ 
+ Downloads 
+ Trial Software 
+ Contact Sales 
+ Pricing and Licensing 
+ How to Buy 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Learn to Use 
+ 
+ 
+ Documentation 
+ Tutorials 
+ Examples 
+ Videos and Webinars 
+ Training 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Get Support 
+ 
+ 
+ Installation Help 
+ MATLAB Answers 
+ Consulting 
+ License Center 
+ Contact Support 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ About MathWorks 
+ 
+ 
+ Careers 
+ Newsroom 
+ Social Mission 
+ Customer Stories 
+ About MathWorks 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  BASIC FOOTER CONTENT - Begin  
+ 
+ 
+ 
+ 
+ 
+  Code to Remove Tracking from Previous page and add new tracking  
+ 
+ 
+ Select a Web Site 
+ United States 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+		
+
+		
+			
+			Trust Center 
+ 
+ 
+ 
+
+		
+
+		
+			
+			Trademarks 
+ 
+ 
+ 
+
+		
+
+		
+			
+			Privacy Policy 
+ 
+ 
+ 
+
+		
+
+		
+			
+			Preventing Piracy 
+ 
+ 
+ 
+
+		
+
+		
+			
+			Application Status 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ © 1994-2023 The MathWorks, Inc. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Join the conversation 
+ 
+ 
+ 
+ 
+  BASIC FAT FOOTER CONTENT - End  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+				if (typeof matrix !== 'undefined') {
+					matrix.show({
+						largeId: 'headernav_matrix',
+						smallId: ['matrix_affordance_container_mobile', 'matrix_menu_container_mobile'],
+						env: 'prod',
+						tier: 'DOTCOM',
+						lang: 'en'
+					});
+				}
