@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # URL of the webpage
-url = 'https://www.mathworks.com/discovery/deep-learning.html'
+url = 'https://www.techtarget.com/searchenterpriseai/definition/deep-learning-deep-neural-network'
 
 # Send a GET request to the URL and retrieve the HTML content
 response = requests.get(url)
@@ -23,7 +23,7 @@ for link in soup.find_all('a'):
 modified_html = soup.prettify()
 
 # Save the modified HTML as an HTML file
-with open('modified.html', 'w') as file:
+with open('modified.html', 'w', encoding='utf-8') as file:
     file.write(modified_html)
 
 print("Modified HTML saved as modified.html")
